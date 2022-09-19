@@ -20,12 +20,38 @@
           "object",
           "type"
         ],
+        "pathGroups": [
+          {
+            "pattern": "{next/**,react}",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "@/**",
+            "group": "internal",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["builtin", "object"],
         "newlines-between": "always",
         "alphabetize": {
-          "order": "asc"
+          "order": "asc",
+          "caseInsensitive": true
         }
       }
     ],
+    "sort-imports": [
+      "error",
+      {
+        "allowSeparatedGroups": true,
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+      }
+    ],
+    "import/first": "error",
+    "import/newline-after-import": "error",
     "import/no-duplicates": "error",
     "react/jsx-sort-props": "error",
     "sort-keys-fix/sort-keys-fix": "error",
