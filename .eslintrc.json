@@ -53,7 +53,19 @@
     "import/first": "error",
     "import/newline-after-import": "error",
     "import/no-duplicates": "error",
-    "react/jsx-sort-props": "error",
+    "react/jsx-sort-props": [
+      "error",
+      {
+        "callbacksLast": true,
+        "shorthandFirst": true,
+        "shorthandLast": false,
+        "multiline": "last",
+        "ignoreCase": true,
+        "noSortAlphabetically": false,
+        "reservedFirst": ["children", "key"],
+        "locale": "auto"
+      }
+    ],
     "sort-keys-fix/sort-keys-fix": "error",
     "typescript-sort-keys/interface": "error",
     "unused-imports/no-unused-imports": "error"
