@@ -1,0 +1,17 @@
+{
+  // デフォルトフォーマッターとして Prettier プラグインを利用
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // ファイル保存時にデフォルトフォーマッターでファイルをフォーマットする
+  "editor.formatOnSave": true,
+  // ファイル保存時のコードアクション設定
+  "editor.codeActionsOnSave": {
+    // ESLint プラグインで修正する
+    "source.fixAll.eslint": true
+  },
+  // ファイル保存時に行末に改行を挿入
+  "files.insertFinalNewline": true,
+  // ファイル保存時に最終行以降の空行を削除
+  "files.trimFinalNewlines": true,
+  // ファイル保存時に各行の末尾にある半角スペースを削除
+  "files.trimTrailingWhitespace": true
+}
